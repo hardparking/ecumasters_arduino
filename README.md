@@ -18,3 +18,15 @@ to the GND on the MAX3232 and the featherwing.
 TX from the ECU should be wired to R1IN on the MAX3232
 R1OUT from the MAX3232 should be wired to the RX port 
 on the featherwing
+
+##Uploading code
+
+Uploading the code will be a little harder. You'll need to setup 
+the Arduino IDE and follow the instructions for setting up the 
+adafruit feather family of products 
+[here](https://learn.adafruit.com/adafruit-feather-m0-basic-proto/using-with-arduino-ide).
+
+You'll need to edit variant.cpp in the feather_m0 and comment out the SERCOM0_Handler function
+(lines 217-220).
+
+Compile and upload!
